@@ -1,0 +1,15 @@
+#English Language File
+
+#Tab
+itemGroup.hakuyoumod=Hakuyou Mod
+
+#Item
+item.Pan.name=Pan
+item.Ham.name=Ham
+item.FireSword.name=Fire Sword
+item.FirePickaxe.name=Fire Pickaxe
+item.HakuyouSword.name=Hakuyou Sword
+item.rod.name=Rod
+
+#block
+tile.Hakuyou.name=hakuyou Block

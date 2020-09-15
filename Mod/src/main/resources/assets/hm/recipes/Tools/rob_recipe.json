@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "E",
+    "S",
+    "S"
+  ],
+  "key": {
+    "E": [{
+      "item": "minecraft:emerald",
+      "data": 0
+    }],
+    "S": [{
+      "item": "minecraft:stick",
+      "data": 0
+    }]
+  },
+  "result": {
+    "item": "hm:rod",
+    "data": 0,
+    "count": 1
+  }
+}

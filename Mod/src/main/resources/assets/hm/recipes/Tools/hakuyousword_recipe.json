@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "H",
+    "H",
+    "F"
+  ],
+  "key": {
+    "H": [{
+      "item": "hm:hakuyou",
+      "data": 0
+    }],
+    "F": [{
+      "item": "hm:firesword",
+      "data": 0
+    }]
+  },
+  "result": {
+    "item": "hm:hakuyousword",
+    "data": 0,
+    "count": 1
+  }
+}

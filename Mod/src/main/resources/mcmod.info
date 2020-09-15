@@ -1,0 +1,16 @@
+[
+{
+  "modid": "hm",
+  "name": "Hakuyou Mod",
+  "description": "Hakuyou Mod!! this Mod is Sample.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/hakuyou00",
+  "updateUrl": "",
+  "authorList": ["Hakuyou"],
+  "credits": "",
+  "logoFile": "icon.png",
+  "screenshots": [],
+  "dependencies": ["mod_MinecraftForge"]
+}
+]
