@@ -21,16 +21,30 @@ public class RodGuiContainer extends GuiContainer {
         this.drawTexturedModalRect(this.guiLeft,this.guiTop,0,0,xSize,ySize);
     }
     @Override
-    public void initGui()
-    {
+    public void initGui() {
         super.initGui();
 
-        this.buttonList.add(new GuiButton(1,100,200,100,20,"Hello"));
+        //add Button
+        this.buttonList.add(
+                new GuiButton(1,130,105,45,20,Main.INSTANCE.Button_Texts[0])
+        );
+        this.buttonList.add(
+                new GuiButton(2,185,105,45,20,Main.INSTANCE.Button_Texts[1])
+        );
+        this.buttonList.add(
+                new GuiButton(3,240,105,45,20,Main.INSTANCE.Button_Texts[2])
+        );
     }
     @Override
-    protected void actionPerformed(GuiButton b){
-        if(b.id == 1){
-            Main.logger.debug("pushed button");
+    protected void actionPerformed(GuiButton b) {
+        for (int i = 0; i < Main.INSTANCE.Button_Texts.length; i++) {
+            if (i == b.id - 1) {
+                Main.INSTANCE.Button_Texts[i] = "Selected";
+            } else {
+                Main.INSTANCE.Button_Texts[i] = "Change";
+            }
+            this.buttonList.get(i).displayString = Main.INSTANCE.Button_Texts[i];
         }
+        Main.INSTANCE.PushedButtonNum = b.id;
     }
 }

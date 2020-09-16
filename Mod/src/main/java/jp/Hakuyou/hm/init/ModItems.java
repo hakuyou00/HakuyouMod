@@ -1,19 +1,13 @@
 package jp.Hakuyou.hm.init;
 
 import jp.Hakuyou.hm.Item.Foods.FoodBase;
-import jp.Hakuyou.hm.Item.Foods.FoodEffectBase;
-import jp.Hakuyou.hm.Item.ItemBase;
 import jp.Hakuyou.hm.Item.Tools.Pickaxe;
 import jp.Hakuyou.hm.Item.Tools.Rod;
 import jp.Hakuyou.hm.Item.Tools.Sword;
-import net.minecraft.init.MobEffects;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSword;
-import net.minecraft.potion.PotionEffect;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.util.EnumHelper;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +26,8 @@ public class ModItems {
     public static final ItemSword FireSword = new Sword("FireSword",FIRESWORD_MATERIAL,512);
     public static final ItemPickaxe FirePickaxe = new Pickaxe("FirePickaxe",FIREPICKAXE_MATERIAL,512);
     public static final  ItemSword HakuyouSword = new Sword("HakuyouSword",HAKUYOUSWORD_MATERIAL,1024);
+
+    public static final Item throwingStone = new ThrowingItem();
 
     //Item
     public static final Item Rod = new Rod("rod",256);

@@ -47,6 +47,9 @@ public class Main
 
     public static Logger logger;
 
+    public int PushedButtonNum = 0;
+    public String[] Button_Texts = { "Selected","Change","Change"};
+
     @Mod.Instance(MODID)
     public static Main INSTANCE;
 
@@ -57,7 +60,7 @@ public class Main
 
     public static final int GUI_ID = 0;
     public static final ResourceLocation rodGUI =
-            new ResourceLocation("hm", "textures/gui/rodgui.png");
+            new ResourceLocation( "hm:textures/gui/rodgui.png");
 
     @EventHandler
     public void Load(FMLPreInitializationEvent event)
