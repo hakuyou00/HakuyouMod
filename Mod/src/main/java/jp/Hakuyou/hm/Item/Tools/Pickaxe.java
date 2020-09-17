@@ -14,6 +14,7 @@ public class Pickaxe extends ItemPickaxe implements IHasModel {
         setCreativeTab(Main.creativeTab);
         setMaxDamage(damage);
 
+        registerModels();
         ModItems.ITEMS.add(this);
     }
 

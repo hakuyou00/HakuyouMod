@@ -17,7 +17,7 @@ public class Sword extends ItemSword implements IHasModel {
         setMaxDamage(damage);
         setMaxStackSize(1);
 
-
+        registerModels();
         ModItems.ITEMS.add(this);
     }
 
@@ -25,5 +25,6 @@ public class Sword extends ItemSword implements IHasModel {
     public void registerModels()
     {
         Main.proxy.registerItemRenderer(this,0,"inventory");
+        Main.logger.debug("register Models : " + this.getRegistryName());
     }
 }

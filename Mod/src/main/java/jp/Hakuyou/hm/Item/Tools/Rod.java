@@ -15,6 +15,7 @@ public class Rod extends Item implements IHasModel {
         setMaxStackSize(1);
         setMaxDamage(damage);
 
+        registerModels();
         ModItems.ITEMS.add(this);
     }
 

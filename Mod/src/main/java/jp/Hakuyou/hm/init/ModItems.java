@@ -23,11 +23,9 @@ public class ModItems {
             = EnumHelper.addToolMaterial("hakuyousword_material",4,1024,12.0f,5.5f,30);
 
     //Tool
-    public static final ItemSword FireSword = new Sword("FireSword",FIRESWORD_MATERIAL,512);
-    public static final ItemPickaxe FirePickaxe = new Pickaxe("FirePickaxe",FIREPICKAXE_MATERIAL,512);
-    public static final  ItemSword HakuyouSword = new Sword("HakuyouSword",HAKUYOUSWORD_MATERIAL,1024);
-
-    public static final Item throwingStone = new ThrowingItem();
+    public static final ItemSword FireSword = new Sword("firesword",FIRESWORD_MATERIAL,512);
+    public static final ItemPickaxe FirePickaxe = new Pickaxe("firepickaxe",FIREPICKAXE_MATERIAL,512);
+    public static final  ItemSword HakuyouSword = new Sword("hakuyousword",HAKUYOUSWORD_MATERIAL,1024);
 
     //Item
     public static final Item Rod = new Rod("rod",256);

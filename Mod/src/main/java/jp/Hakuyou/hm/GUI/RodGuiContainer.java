@@ -1,6 +1,7 @@
 package jp.Hakuyou.hm.GUI;
 
 import jp.Hakuyou.hm.Main;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
 
@@ -24,15 +25,18 @@ public class RodGuiContainer extends GuiContainer {
     public void initGui() {
         super.initGui();
 
+        int x = Minecraft.getMinecraft().currentScreen.width  / 2 - 23;
+        int y = Minecraft.getMinecraft().currentScreen.height / 2 - 20;
+
         //add Button
         this.buttonList.add(
-                new GuiButton(1,130,105,45,20,Main.INSTANCE.Button_Texts[0])
+                new GuiButton(1, x - 56,y,46,20,Main.INSTANCE.Button_Texts[0])
         );
         this.buttonList.add(
-                new GuiButton(2,185,105,45,20,Main.INSTANCE.Button_Texts[1])
+                new GuiButton(2,x,y,46,20,Main.INSTANCE.Button_Texts[1])
         );
         this.buttonList.add(
-                new GuiButton(3,240,105,45,20,Main.INSTANCE.Button_Texts[2])
+                new GuiButton(3,x + 56,y,46,20,Main.INSTANCE.Button_Texts[2])
         );
     }
     @Override
@@ -45,6 +49,6 @@ public class RodGuiContainer extends GuiContainer {
             }
             this.buttonList.get(i).displayString = Main.INSTANCE.Button_Texts[i];
         }
-        Main.INSTANCE.PushedButtonNum = b.id;
+        Main.INSTANCE.PushedButtonNum = b.id - 1;
     }
 }

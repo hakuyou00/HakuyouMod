@@ -43,7 +43,7 @@ public class Main
 
     public static final String ACCEPTED_VERSIONS = "[1.12.2]";
     public static final String CLIENT_PROXY_CLASS = "jp.Hakuyou.hm.proxy.ClientProxy";
-    public static final String COMMON_PROXY_CLASS = "com.Hakuyou.hm.proxy.CommonProxy";
+    public static final String COMMON_PROXY_CLASS = "jp.Hakuyou.hm.proxy.CommonProxy";
 
     public static Logger logger;
 
