@@ -12,7 +12,7 @@ public class Sword extends ItemSword implements IHasModel {
     {
         super(material);
         setUnlocalizedName(name);
-        setRegistryName(Main.MODID,name);
+        setRegistryName(name);
         setCreativeTab(Main.creativeTab);
         setMaxDamage(damage);
         setMaxStackSize(1);

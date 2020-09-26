@@ -10,7 +10,7 @@ public class Pickaxe extends ItemPickaxe implements IHasModel {
     {
         super(material);
         setUnlocalizedName(name);
-        setRegistryName(Main.MODID,name);
+        setRegistryName(name);
         setCreativeTab(Main.creativeTab);
         setMaxDamage(damage);
 
